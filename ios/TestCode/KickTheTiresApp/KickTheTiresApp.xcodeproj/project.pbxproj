@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D34DE0C014D3541100F12818 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34DE0BF14D3541100F12818 /* UIKit.framework */; };
+		D34DE0C214D3541100F12818 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34DE0C114D3541100F12818 /* Foundation.framework */; };
+		D34DE0C414D3541100F12818 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34DE0C314D3541100F12818 /* CoreGraphics.framework */; };
+		D34DE0CA14D3541100F12818 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D34DE0C814D3541100F12818 /* InfoPlist.strings */; };
+		D34DE0CC14D3541100F12818 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D34DE0CB14D3541100F12818 /* main.m */; };
+		D34DE0D014D3541100F12818 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D34DE0CF14D3541100F12818 /* AppDelegate.m */; };
+		D34DE0D314D3541100F12818 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34DE0D114D3541100F12818 /* MainStoryboard_iPhone.storyboard */; };
+		D34DE0D614D3541100F12818 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34DE0D414D3541100F12818 /* MainStoryboard_iPad.storyboard */; };
+		D34DE0D914D3541100F12818 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34DE0D814D3541100F12818 /* ViewController.m */; };
+		D34DE0E114D3541200F12818 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34DE0E014D3541200F12818 /* SenTestingKit.framework */; };
+		D34DE0E214D3541200F12818 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34DE0BF14D3541100F12818 /* UIKit.framework */; };
+		D34DE0E314D3541200F12818 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34DE0C114D3541100F12818 /* Foundation.framework */; };
+		D34DE0EB14D3541200F12818 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D34DE0E914D3541200F12818 /* InfoPlist.strings */; };
+		D34DE0EE14D3541200F12818 /* KickTheTiresAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D34DE0ED14D3541200F12818 /* KickTheTiresAppTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D34DE0E414D3541200F12818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D34DE0B214D3541100F12818 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D34DE0BA14D3541100F12818;
+			remoteInfo = KickTheTiresApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D34DE0BB14D3541100F12818 /* KickTheTiresApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KickTheTiresApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34DE0BF14D3541100F12818 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D34DE0C114D3541100F12818 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D34DE0C314D3541100F12818 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D34DE0C714D3541100F12818 /* KickTheTiresApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KickTheTiresApp-Info.plist"; sourceTree = "<group>"; };
+		D34DE0C914D3541100F12818 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D34DE0CB14D3541100F12818 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D34DE0CD14D3541100F12818 /* KickTheTiresApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KickTheTiresApp-Prefix.pch"; sourceTree = "<group>"; };
+		D34DE0CE14D3541100F12818 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D34DE0CF14D3541100F12818 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D34DE0D214D3541100F12818 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		D34DE0D514D3541100F12818 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		D34DE0D714D3541100F12818 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D34DE0D814D3541100F12818 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D34DE0DF14D3541200F12818 /* KickTheTiresAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KickTheTiresAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34DE0E014D3541200F12818 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D34DE0E814D3541200F12818 /* KickTheTiresAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KickTheTiresAppTests-Info.plist"; sourceTree = "<group>"; };
+		D34DE0EA14D3541200F12818 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D34DE0EC14D3541200F12818 /* KickTheTiresAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KickTheTiresAppTests.h; sourceTree = "<group>"; };
+		D34DE0ED14D3541200F12818 /* KickTheTiresAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KickTheTiresAppTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D34DE0B814D3541100F12818 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34DE0C014D3541100F12818 /* UIKit.framework in Frameworks */,
+				D34DE0C214D3541100F12818 /* Foundation.framework in Frameworks */,
+				D34DE0C414D3541100F12818 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34DE0DB14D3541200F12818 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34DE0E114D3541200F12818 /* SenTestingKit.framework in Frameworks */,
+				D34DE0E214D3541200F12818 /* UIKit.framework in Frameworks */,
+				D34DE0E314D3541200F12818 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D34DE0B014D3541100F12818 = {
+			isa = PBXGroup;
+			children = (
+				D34DE0C514D3541100F12818 /* KickTheTiresApp */,
+				D34DE0E614D3541200F12818 /* KickTheTiresAppTests */,
+				D34DE0BE14D3541100F12818 /* Frameworks */,
+				D34DE0BC14D3541100F12818 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D34DE0BC14D3541100F12818 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D34DE0BB14D3541100F12818 /* KickTheTiresApp.app */,
+				D34DE0DF14D3541200F12818 /* KickTheTiresAppTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D34DE0BE14D3541100F12818 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D34DE0BF14D3541100F12818 /* UIKit.framework */,
+				D34DE0C114D3541100F12818 /* Foundation.framework */,
+				D34DE0C314D3541100F12818 /* CoreGraphics.framework */,
+				D34DE0E014D3541200F12818 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D34DE0C514D3541100F12818 /* KickTheTiresApp */ = {
+			isa = PBXGroup;
+			children = (
+				D34DE0CE14D3541100F12818 /* AppDelegate.h */,
+				D34DE0CF14D3541100F12818 /* AppDelegate.m */,
+				D34DE0D114D3541100F12818 /* MainStoryboard_iPhone.storyboard */,
+				D34DE0D414D3541100F12818 /* MainStoryboard_iPad.storyboard */,
+				D34DE0D714D3541100F12818 /* ViewController.h */,
+				D34DE0D814D3541100F12818 /* ViewController.m */,
+				D34DE0C614D3541100F12818 /* Supporting Files */,
+			);
+			path = KickTheTiresApp;
+			sourceTree = "<group>";
+		};
+		D34DE0C614D3541100F12818 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D34DE0C714D3541100F12818 /* KickTheTiresApp-Info.plist */,
+				D34DE0C814D3541100F12818 /* InfoPlist.strings */,
+				D34DE0CB14D3541100F12818 /* main.m */,
+				D34DE0CD14D3541100F12818 /* KickTheTiresApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D34DE0E614D3541200F12818 /* KickTheTiresAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D34DE0EC14D3541200F12818 /* KickTheTiresAppTests.h */,
+				D34DE0ED14D3541200F12818 /* KickTheTiresAppTests.m */,
+				D34DE0E714D3541200F12818 /* Supporting Files */,
+			);
+			path = KickTheTiresAppTests;
+			sourceTree = "<group>";
+		};
+		D34DE0E714D3541200F12818 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D34DE0E814D3541200F12818 /* KickTheTiresAppTests-Info.plist */,
+				D34DE0E914D3541200F12818 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D34DE0BA14D3541100F12818 /* KickTheTiresApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D34DE0F114D3541200F12818 /* Build configuration list for PBXNativeTarget "KickTheTiresApp" */;
+			buildPhases = (
+				D34DE0B714D3541100F12818 /* Sources */,
+				D34DE0B814D3541100F12818 /* Frameworks */,
+				D34DE0B914D3541100F12818 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KickTheTiresApp;
+			productName = KickTheTiresApp;
+			productReference = D34DE0BB14D3541100F12818 /* KickTheTiresApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D34DE0DE14D3541200F12818 /* KickTheTiresAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D34DE0F414D3541200F12818 /* Build configuration list for PBXNativeTarget "KickTheTiresAppTests" */;
+			buildPhases = (
+				D34DE0DA14D3541200F12818 /* Sources */,
+				D34DE0DB14D3541200F12818 /* Frameworks */,
+				D34DE0DC14D3541200F12818 /* Resources */,
+				D34DE0DD14D3541200F12818 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D34DE0E514D3541200F12818 /* PBXTargetDependency */,
+			);
+			name = KickTheTiresAppTests;
+			productName = KickTheTiresAppTests;
+			productReference = D34DE0DF14D3541200F12818 /* KickTheTiresAppTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D34DE0B214D3541100F12818 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Example Company Inc.";
+			};
+			buildConfigurationList = D34DE0B514D3541100F12818 /* Build configuration list for PBXProject "KickTheTiresApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D34DE0B014D3541100F12818;
+			productRefGroup = D34DE0BC14D3541100F12818 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D34DE0BA14D3541100F12818 /* KickTheTiresApp */,
+				D34DE0DE14D3541200F12818 /* KickTheTiresAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D34DE0B914D3541100F12818 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34DE0CA14D3541100F12818 /* InfoPlist.strings in Resources */,
+				D34DE0D314D3541100F12818 /* MainStoryboard_iPhone.storyboard in Resources */,
+				D34DE0D614D3541100F12818 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34DE0DC14D3541200F12818 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34DE0EB14D3541200F12818 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D34DE0DD14D3541200F12818 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D34DE0B714D3541100F12818 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34DE0CC14D3541100F12818 /* main.m in Sources */,
+				D34DE0D014D3541100F12818 /* AppDelegate.m in Sources */,
+				D34DE0D914D3541100F12818 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34DE0DA14D3541200F12818 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34DE0EE14D3541200F12818 /* KickTheTiresAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D34DE0E514D3541200F12818 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D34DE0BA14D3541100F12818 /* KickTheTiresApp */;
+			targetProxy = D34DE0E414D3541200F12818 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D34DE0C814D3541100F12818 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D34DE0C914D3541100F12818 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D34DE0D114D3541100F12818 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D34DE0D214D3541100F12818 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		D34DE0D414D3541100F12818 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D34DE0D514D3541100F12818 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		D34DE0E914D3541200F12818 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D34DE0EA14D3541200F12818 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D34DE0EF14D3541200F12818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D34DE0F014D3541200F12818 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D34DE0F214D3541200F12818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KickTheTiresApp/KickTheTiresApp-Prefix.pch";
+				INFOPLIST_FILE = "KickTheTiresApp/KickTheTiresApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D34DE0F314D3541200F12818 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KickTheTiresApp/KickTheTiresApp-Prefix.pch";
+				INFOPLIST_FILE = "KickTheTiresApp/KickTheTiresApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D34DE0F514D3541200F12818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KickTheTiresApp.app/KickTheTiresApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KickTheTiresApp/KickTheTiresApp-Prefix.pch";
+				INFOPLIST_FILE = "KickTheTiresAppTests/KickTheTiresAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D34DE0F614D3541200F12818 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KickTheTiresApp.app/KickTheTiresApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KickTheTiresApp/KickTheTiresApp-Prefix.pch";
+				INFOPLIST_FILE = "KickTheTiresAppTests/KickTheTiresAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D34DE0B514D3541100F12818 /* Build configuration list for PBXProject "KickTheTiresApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34DE0EF14D3541200F12818 /* Debug */,
+				D34DE0F014D3541200F12818 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D34DE0F114D3541200F12818 /* Build configuration list for PBXNativeTarget "KickTheTiresApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34DE0F214D3541200F12818 /* Debug */,
+				D34DE0F314D3541200F12818 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D34DE0F414D3541200F12818 /* Build configuration list for PBXNativeTarget "KickTheTiresAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34DE0F514D3541200F12818 /* Debug */,
+				D34DE0F614D3541200F12818 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D34DE0B214D3541100F12818 /* Project object */;
+}
