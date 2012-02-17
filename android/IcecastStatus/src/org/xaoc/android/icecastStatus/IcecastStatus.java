@@ -1,4 +1,4 @@
-package com.portaboom.android.icecastStatus;
+package org.xaoc.android.icecastStatus;
 
 /**
  * $Id$

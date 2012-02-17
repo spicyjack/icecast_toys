@@ -10,7 +10,7 @@
  * 
 */
 
-package com.portaboom.android.icecastStatus;
+package org.xaoc.android.icecastStatus;
 
 //android imports
 import android.app.Activity;
