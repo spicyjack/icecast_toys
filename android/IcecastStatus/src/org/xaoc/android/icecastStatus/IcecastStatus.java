@@ -119,8 +119,12 @@ public class IcecastStatus extends Activity {
         Log.d(LOGTAG, "displaying URL fetch dialog");
         this.showDialog(URL_DIALOG_KEY);
     
-        // FIXME put the status download and parsing into it's own thread
+        // FIXME
+        // - put the status download and parsing into it's own thread
         // create the fetching object
+        // - create a service that downloads the file when requested
+        // - create a handler that the service calls when the file is downloaded,
+        // or when an error occurs
         HTTPStatusDownload hsd = new HTTPStatusDownload();
         // try and fetch the status URL
         Log.d(LOGTAG, "Fetching statURL: " + statURL);
