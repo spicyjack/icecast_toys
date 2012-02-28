@@ -38,21 +38,21 @@
 		D37DE6F614FD941800F70F3D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D37DE6F814FD941800F70F3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D37DE6FA14FD941800F70F3D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D37DE6FE14FD941800F70F3D /* IcecastStatus-Info.plist */ = {isa = PBXFileReference; path = "IcecastStatus-Info.plist"; sourceTree = "<group>"; };
+		D37DE6FE14FD941800F70F3D /* IcecastStatus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IcecastStatus-Info.plist"; sourceTree = "<group>"; };
 		D37DE70014FD941800F70F3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D37DE70214FD941800F70F3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D37DE70414FD941800F70F3D /* IcecastStatus-Prefix.pch */ = {isa = PBXFileReference; path = "IcecastStatus-Prefix.pch"; sourceTree = "<group>"; };
-		D37DE70514FD941800F70F3D /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		D37DE70414FD941800F70F3D /* IcecastStatus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IcecastStatus-Prefix.pch"; sourceTree = "<group>"; };
+		D37DE70514FD941800F70F3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D37DE70614FD941800F70F3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D37DE70914FD941800F70F3D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		D37DE70C14FD941800F70F3D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		D37DE70E14FD941800F70F3D /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		D37DE70E14FD941800F70F3D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D37DE70F14FD941800F70F3D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D37DE71614FD941800F70F3D /* IcecastStatusTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IcecastStatusTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37DE71714FD941800F70F3D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		D37DE71F14FD941800F70F3D /* IcecastStatusTests-Info.plist */ = {isa = PBXFileReference; path = "IcecastStatusTests-Info.plist"; sourceTree = "<group>"; };
+		D37DE71F14FD941800F70F3D /* IcecastStatusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IcecastStatusTests-Info.plist"; sourceTree = "<group>"; };
 		D37DE72114FD941800F70F3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D37DE72314FD941800F70F3D /* IcecastStatusTests.h */ = {isa = PBXFileReference; path = IcecastStatusTests.h; sourceTree = "<group>"; };
+		D37DE72314FD941800F70F3D /* IcecastStatusTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IcecastStatusTests.h; sourceTree = "<group>"; };
 		D37DE72414FD941800F70F3D /* IcecastStatusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IcecastStatusTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
