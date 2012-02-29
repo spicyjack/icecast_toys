@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../school/Intro_To_Objective_C/ObjC-2012-Jan-Mar.git/D61Internet/D61Internet.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TestCode/IcecastStatus/IcecastStatus.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TestCode/KickTheTiresApp/KickTheTiresApp.xcodeproj">
    </FileRef>
 </Workspace>
