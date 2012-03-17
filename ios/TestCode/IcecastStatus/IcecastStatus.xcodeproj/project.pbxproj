@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D34331F11514161800B123A7 /* NetworkingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D34331F01514161800B123A7 /* NetworkingUtils.m */; };
 		D37DE6F714FD941800F70F3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37DE6F614FD941800F70F3D /* UIKit.framework */; };
 		D37DE6F914FD941800F70F3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37DE6F814FD941800F70F3D /* Foundation.framework */; };
 		D37DE6FB14FD941800F70F3D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37DE6FA14FD941800F70F3D /* CoreGraphics.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D34331EF1514161800B123A7 /* NetworkingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingUtils.h; sourceTree = "<group>"; };
+		D34331F01514161800B123A7 /* NetworkingUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkingUtils.m; sourceTree = "<group>"; };
 		D37DE6F214FD941800F70F3D /* IcecastStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IcecastStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37DE6F614FD941800F70F3D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D37DE6F814FD941800F70F3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -120,6 +123,8 @@
 				D37DE70E14FD941800F70F3D /* ViewController.h */,
 				D37DE70F14FD941800F70F3D /* ViewController.m */,
 				D37DE6FD14FD941800F70F3D /* Supporting Files */,
+				D34331EF1514161800B123A7 /* NetworkingUtils.h */,
+				D34331F01514161800B123A7 /* NetworkingUtils.m */,
 			);
 			path = IcecastStatus;
 			sourceTree = "<group>";
@@ -265,6 +270,7 @@
 				D37DE70314FD941800F70F3D /* main.m in Sources */,
 				D37DE70714FD941800F70F3D /* AppDelegate.m in Sources */,
 				D37DE71014FD941800F70F3D /* ViewController.m in Sources */,
+				D34331F11514161800B123A7 /* NetworkingUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +450,7 @@
 				D37DE72A14FD941800F70F3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D37DE72B14FD941800F70F3D /* Build configuration list for PBXNativeTarget "IcecastStatusTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +459,7 @@
 				D37DE72D14FD941800F70F3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,6 +9,50 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
+// implementation variables
+{
+    NSMutableString *ms;
+    UITextView *textView;
+    NSMutableData *rawXmlData;
+}
+
+-(void) connection:(NSURLConnection *)connection 
+    didReceiveData:(NSData *)data
+{
+    [rawXmlData appendData:data];
+}
+-(void) connection:(NSURLConnection *)connection 
+  didFailWithError:(NSError *)error
+{
+    [ms appendFormat:@"%@\n", [error localizedDescription]];
+    textView.text = ms;
+}
+
+-(void) connectionDidFinishLoading:(NSURLConnection *)connection
+{
+    NSString *xml = [[NSString alloc] 
+                     initWithData:rawXmlData encoding:NSUTF8StringEncoding];
+    [ms appendFormat:@"%@\n", xml];
+    textView.text = ms;
+    NSXMLParser *parser = 
+    [[NSXMLParser alloc] initWithData:rawXmlData];
+    [parser setDelegate:self];
+    //WARNING! The parsing is synchronous!
+    [parser parse];
+}
+-(void) parserDidStartDocument:(NSXMLParser *)parser
+{
+    [ms appendString:@"Start XML Parsing!\n"];
+}
+-(void) parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
+{
+    [ms appendFormat:@"%@\n", elementName];
+}
+-(void) parserDidEndDocument:(NSXMLParser *)parser
+{
+    [ms appendString:@"End XML Parsing!\n"];
+    textView.text = ms;
+}
 
 @synthesize window = _window;
 
