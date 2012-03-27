@@ -2,13 +2,16 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../school/Intro_to_Objective_C/ObjC-2012-Jan-Mar.git/D72ThreadedXmlParser/D72ThreadedXmlParser.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../school/Intro_To_Objective_C/ObjC-2012-Jan-Mar.git/D61Internet/D61Internet.xcodeproj">
+      location = "group:../../school/Intro_to_Objective_C/D72ThreadedXMLParser.git/D72ThreadedXmlParser.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:TestCode/IcecastStatus/IcecastStatus.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TestCode/CoreDataTest/CoreDataTest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../school/Intro_To_Objective_C/ObjC-2012-Jan-Mar.git/D61Internet/D61Internet.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:TestCode/KickTheTiresApp/KickTheTiresApp.xcodeproj">
