@@ -23,6 +23,7 @@
 		D37DE72214FD941800F70F3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D37DE72014FD941800F70F3D /* InfoPlist.strings */; };
 		D37DE72514FD941800F70F3D /* IcecastStatusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D37DE72414FD941800F70F3D /* IcecastStatusTests.m */; };
 		D3E6325E1521662C00523C2C /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E6325D1521662C00523C2C /* Video.m */; };
+		D3E632611521675C00523C2C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E632601521675C00523C2C /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		D37DE72414FD941800F70F3D /* IcecastStatusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IcecastStatusTests.m; sourceTree = "<group>"; };
 		D3E6325C1521662C00523C2C /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
 		D3E6325D1521662C00523C2C /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		D3E632601521675C00523C2C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E632611521675C00523C2C /* SystemConfiguration.framework in Frameworks */,
 				D37DE6F714FD941800F70F3D /* UIKit.framework in Frameworks */,
 				D37DE6F914FD941800F70F3D /* Foundation.framework in Frameworks */,
 				D37DE6FB14FD941800F70F3D /* CoreGraphics.framework in Frameworks */,
@@ -89,6 +92,7 @@
 		D37DE6E714FD941800F70F3D = {
 			isa = PBXGroup;
 			children = (
+				D3E632601521675C00523C2C /* SystemConfiguration.framework */,
 				D37DE6FC14FD941800F70F3D /* IcecastStatus */,
 				D37DE71D14FD941800F70F3D /* IcecastStatusTests */,
 				D37DE6F514FD941800F70F3D /* Frameworks */,
