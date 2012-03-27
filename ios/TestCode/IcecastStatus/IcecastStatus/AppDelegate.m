@@ -86,8 +86,7 @@ qualifiedName:(NSString *)qName
         state = xmlInit;
         return;
     }
-    if ( [elementName isEqualToString:@"title"] ) {
-
+    if ( [elementName isEqualToString:@"pre"] ) {
         state = xmlTitle;
         return;
     }
@@ -104,7 +103,8 @@ qualifiedName:(NSString *)qName
     // use the current state to decide what to do
     switch (state) {
         case xmlTitle:
-            video.title = string;
+            //video.title = string;
+            NSLog(@"string in the <pre> tags is:\n%@", string);
             state = xmlInit;
             //break;
             return;
