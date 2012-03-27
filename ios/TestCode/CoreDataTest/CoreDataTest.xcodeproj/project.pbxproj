@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D34C45A215215F9C00EBE634 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D34C45A015215F9C00EBE634 /* Model.xcdatamodeld */; };
 		D3903DFB1521568B0048E4D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3903DFA1521568B0048E4D6 /* UIKit.framework */; };
 		D3903DFD1521568B0048E4D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3903DFC1521568B0048E4D6 /* Foundation.framework */; };
 		D3903DFF1521568B0048E4D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3903DFE1521568B0048E4D6 /* CoreGraphics.framework */; };
@@ -15,22 +16,25 @@
 		D3903E0B1521568B0048E4D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3903E0A1521568B0048E4D6 /* AppDelegate.m */; };
 		D3903E0E1521568B0048E4D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3903E0D1521568B0048E4D6 /* ViewController.m */; };
 		D3903E111521568B0048E4D6 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3903E0F1521568B0048E4D6 /* ViewController.xib */; };
+		D3903E18152157030048E4D6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3903E17152157030048E4D6 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D34C45A115215F9C00EBE634 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		D3903DF61521568B0048E4D6 /* CoreDataTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3903DFA1521568B0048E4D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D3903DFC1521568B0048E4D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3903DFE1521568B0048E4D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D3903E021521568B0048E4D6 /* CoreDataTest-Info.plist */ = {isa = PBXFileReference; path = "CoreDataTest-Info.plist"; sourceTree = "<group>"; };
+		D3903E021521568B0048E4D6 /* CoreDataTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataTest-Info.plist"; sourceTree = "<group>"; };
 		D3903E041521568B0048E4D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D3903E061521568B0048E4D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D3903E081521568B0048E4D6 /* CoreDataTest-Prefix.pch */ = {isa = PBXFileReference; path = "CoreDataTest-Prefix.pch"; sourceTree = "<group>"; };
-		D3903E091521568B0048E4D6 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		D3903E081521568B0048E4D6 /* CoreDataTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreDataTest-Prefix.pch"; sourceTree = "<group>"; };
+		D3903E091521568B0048E4D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D3903E0A1521568B0048E4D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D3903E0C1521568B0048E4D6 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		D3903E0C1521568B0048E4D6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D3903E0D1521568B0048E4D6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D3903E101521568B0048E4D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		D3903E17152157030048E4D6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3903E18152157030048E4D6 /* CoreData.framework in Frameworks */,
 				D3903DFB1521568B0048E4D6 /* UIKit.framework in Frameworks */,
 				D3903DFD1521568B0048E4D6 /* Foundation.framework in Frameworks */,
 				D3903DFF1521568B0048E4D6 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +55,7 @@
 		D3903DEB1521568B0048E4D6 = {
 			isa = PBXGroup;
 			children = (
+				D3903E17152157030048E4D6 /* CoreData.framework */,
 				D3903E001521568B0048E4D6 /* CoreDataTest */,
 				D3903DF91521568B0048E4D6 /* Frameworks */,
 				D3903DF71521568B0048E4D6 /* Products */,
@@ -77,6 +83,7 @@
 		D3903E001521568B0048E4D6 /* CoreDataTest */ = {
 			isa = PBXGroup;
 			children = (
+				D34C45A015215F9C00EBE634 /* Model.xcdatamodeld */,
 				D3903E091521568B0048E4D6 /* AppDelegate.h */,
 				D3903E0A1521568B0048E4D6 /* AppDelegate.m */,
 				D3903E0C1521568B0048E4D6 /* ViewController.h */,
@@ -164,6 +171,7 @@
 				D3903E071521568B0048E4D6 /* main.m in Sources */,
 				D3903E0B1521568B0048E4D6 /* AppDelegate.m in Sources */,
 				D3903E0E1521568B0048E4D6 /* ViewController.m in Sources */,
+				D34C45A215215F9C00EBE634 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +283,22 @@
 				D3903E161521568B0048E4D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D34C45A015215F9C00EBE634 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D34C45A115215F9C00EBE634 /* Model.xcdatamodel */,
+			);
+			currentVersion = D34C45A115215F9C00EBE634 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D3903DED1521568B0048E4D6 /* Project object */;
 }
