@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Example Company Inc. All rights reserved.
 //
 
-#import "Video.h"
+#import "IcecastServer.h"
 
 @implementation IcecastServer
 
