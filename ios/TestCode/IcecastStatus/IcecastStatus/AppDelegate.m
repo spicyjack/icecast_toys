@@ -10,7 +10,7 @@
 #import "Video.h"
 
 // enumerated type
-enum ParserState { xmlInit, xmlTitle, xmlDescription };
+enum ParserState { xmlParse, xmlSkip };
 
 @implementation AppDelegate
 {
@@ -18,7 +18,7 @@ enum ParserState { xmlInit, xmlTitle, xmlDescription };
     NSMutableArray *myVideos;
     UITextView *myTextView;
     Video *video;
-    enum ParserState state;
+    enum ParserState parserState;
 }
 
 @synthesize window = _window;
@@ -80,19 +80,9 @@ enum ParserState { xmlInit, xmlTitle, xmlDescription };
 qualifiedName:(NSString *)qName 
    attributes:(NSDictionary *)attributeDict
 {
-    // do we have a 'video' element
-    if ( [elementName isEqualToString:@"video"] ) {
-        video = [[Video alloc] init];
-        state = xmlInit;
-        return;
-    }
+    // we're only looking for the <pre> element
     if ( [elementName isEqualToString:@"pre"] ) {
-        state = xmlTitle;
-        return;
-    }
-    if ( [elementName isEqualToString:@"description"] ) {
-        video.desc = @"";
-        state = xmlDescription;
+        parserState = xmlParse;
         return;
     }
 }
@@ -101,17 +91,11 @@ qualifiedName:(NSString *)qName
 -(void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string
 {
     // use the current state to decide what to do
-    switch (state) {
-        case xmlTitle:
-            //video.title = string;
+    switch (parserState) {
+        case xmlParse:
+            // if the parse flag is set...
             NSLog(@"string in the <pre> tags is:\n%@", string);
-            state = xmlInit;
-            //break;
-            return;
-        case xmlDescription:
-            video.desc = string;
-            state = xmlInit;
-            [myVideos addObject:video];
+            parserState = xmlSkip;
             //break;
             return;
         default:
