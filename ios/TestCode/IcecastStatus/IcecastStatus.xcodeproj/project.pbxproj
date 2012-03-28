@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D30352031522E587004BC701 /* IcecastStream.m in Sources */ = {isa = PBXBuildFile; fileRef = D30352021522E587004BC701 /* IcecastStream.m */; };
+		D30352041522E587004BC701 /* IcecastStream.m in Sources */ = {isa = PBXBuildFile; fileRef = D30352021522E587004BC701 /* IcecastStream.m */; };
 		D34331F11514161800B123A7 /* NetworkingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D34331F01514161800B123A7 /* NetworkingUtils.m */; };
 		D37DE6F714FD941800F70F3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37DE6F614FD941800F70F3D /* UIKit.framework */; };
 		D37DE6F914FD941800F70F3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37DE6F814FD941800F70F3D /* Foundation.framework */; };
@@ -22,7 +24,7 @@
 		D37DE71A14FD941800F70F3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37DE6F814FD941800F70F3D /* Foundation.framework */; };
 		D37DE72214FD941800F70F3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D37DE72014FD941800F70F3D /* InfoPlist.strings */; };
 		D37DE72514FD941800F70F3D /* IcecastStatusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D37DE72414FD941800F70F3D /* IcecastStatusTests.m */; };
-		D3E6325E1521662C00523C2C /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E6325D1521662C00523C2C /* Video.m */; };
+		D3E6325E1521662C00523C2C /* IcecastServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E6325D1521662C00523C2C /* IcecastServer.m */; };
 		D3E632611521675C00523C2C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E632601521675C00523C2C /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D30352011522E587004BC701 /* IcecastStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IcecastStream.h; sourceTree = "<group>"; };
+		D30352021522E587004BC701 /* IcecastStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IcecastStream.m; sourceTree = "<group>"; };
 		D34331EF1514161800B123A7 /* NetworkingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingUtils.h; sourceTree = "<group>"; };
 		D34331F01514161800B123A7 /* NetworkingUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkingUtils.m; sourceTree = "<group>"; };
 		D37DE6F214FD941800F70F3D /* IcecastStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IcecastStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,8 +63,8 @@
 		D37DE72114FD941800F70F3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D37DE72314FD941800F70F3D /* IcecastStatusTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IcecastStatusTests.h; sourceTree = "<group>"; };
 		D37DE72414FD941800F70F3D /* IcecastStatusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IcecastStatusTests.m; sourceTree = "<group>"; };
-		D3E6325C1521662C00523C2C /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
-		D3E6325D1521662C00523C2C /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		D3E6325C1521662C00523C2C /* IcecastServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IcecastServer.h; sourceTree = "<group>"; };
+		D3E6325D1521662C00523C2C /* IcecastServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IcecastServer.m; sourceTree = "<group>"; };
 		D3E632601521675C00523C2C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -131,9 +135,11 @@
 				D37DE70F14FD941800F70F3D /* ViewController.m */,
 				D37DE6FD14FD941800F70F3D /* Supporting Files */,
 				D34331EF1514161800B123A7 /* NetworkingUtils.h */,
-				D3E6325C1521662C00523C2C /* Video.h */,
-				D3E6325D1521662C00523C2C /* Video.m */,
+				D3E6325C1521662C00523C2C /* IcecastServer.h */,
+				D3E6325D1521662C00523C2C /* IcecastServer.m */,
 				D34331F01514161800B123A7 /* NetworkingUtils.m */,
+				D30352011522E587004BC701 /* IcecastStream.h */,
+				D30352021522E587004BC701 /* IcecastStream.m */,
 			);
 			path = IcecastStatus;
 			sourceTree = "<group>";
@@ -213,7 +219,7 @@
 		D37DE6E914FD941800F70F3D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Example Company Inc.";
 			};
 			buildConfigurationList = D37DE6EC14FD941800F70F3D /* Build configuration list for PBXProject "IcecastStatus" */;
@@ -280,7 +286,8 @@
 				D37DE70714FD941800F70F3D /* AppDelegate.m in Sources */,
 				D37DE71014FD941800F70F3D /* ViewController.m in Sources */,
 				D34331F11514161800B123A7 /* NetworkingUtils.m in Sources */,
-				D3E6325E1521662C00523C2C /* Video.m in Sources */,
+				D3E6325E1521662C00523C2C /* IcecastServer.m in Sources */,
+				D30352031522E587004BC701 /* IcecastStream.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D37DE72514FD941800F70F3D /* IcecastStatusTests.m in Sources */,
+				D30352041522E587004BC701 /* IcecastStream.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

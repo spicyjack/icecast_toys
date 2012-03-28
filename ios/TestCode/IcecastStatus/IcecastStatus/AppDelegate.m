@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "Video.h"
+#import "IcecastServer.h"
 
 // enumerated type
 enum ParserState { xmlParse, xmlSkip };
@@ -15,9 +15,9 @@ enum ParserState { xmlParse, xmlSkip };
 @implementation AppDelegate
 {
     // implementation variables
-    NSMutableArray *myVideos;
+    NSMutableArray *icecastStreams;
     UITextView *myTextView;
-    Video *video;
+    IcecastServer *server;
     enum ParserState parserState;
 }
 
@@ -71,7 +71,7 @@ enum ParserState { xmlParse, xmlSkip };
 // notify when the parser started
 -(void)parserDidStartDocument:(NSXMLParser *)parser
 {
-    myVideos = [[NSMutableArray alloc] init];
+    icecastStreams = [[NSMutableArray alloc] init];
 }
 
 // we're starting to parse an <element>
@@ -121,7 +121,7 @@ qualifiedName:(NSString *)qName
 // update the GUI; display the videos by calling the 'description' message
 -(void) updateGUI:(id)sender
 {
-    myTextView.text = [myVideos description];
+    myTextView.text = [icecastStreams description];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
