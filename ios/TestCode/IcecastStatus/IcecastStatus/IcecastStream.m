@@ -10,4 +10,12 @@
 
 @implementation IcecastStream
 
+@synthesize mountPoint;
+@synthesize streamName;
+@synthesize streamStart;
+@synthesize currentListeners;
+@synthesize streamDescription;
+@synthesize currentlyPlayingSong;
+@synthesize streamURL;
+
 @end

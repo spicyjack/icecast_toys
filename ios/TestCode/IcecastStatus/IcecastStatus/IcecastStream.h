@@ -24,4 +24,9 @@
 // methods
 -(NSString *) description;
 
+
+// parse the contents of the icecast status message, and return
+// the streams that belong to this icecast server
++(NSArray *) parseIcecastStreams;
+
 @end
