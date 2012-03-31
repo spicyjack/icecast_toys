@@ -10,16 +10,21 @@
 
 @implementation IcecastServer
 
-@synthesize title;
-@synthesize desc;
+@synthesize serverStart;
+@synthesize serverURL;
+@synthesize currentConnections;
+@synthesize currentSources;
+@synthesize totalConnections;
+@synthesize totalClientConnections;
+@synthesize totalSourceConnections;
 
 // methods
 -(NSString *) description
 {
     NSString *s = [NSString stringWithFormat:@"%@ %@\n",
                    [super description],
-                   self.title,
-                   self.desc];
+                   self.serverStart,
+                   self.serverURL];
     return s;
 }
 

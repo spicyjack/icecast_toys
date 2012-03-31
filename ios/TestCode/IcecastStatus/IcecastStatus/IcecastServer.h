@@ -19,8 +19,14 @@
 @property (nonatomic) unsigned int totalConnections;
 @property (nonatomic) unsigned int totalClientConnections;
 @property (nonatomic) unsigned int totalSourceConnections;
+// current list of streams parsed from the status message
+@property (nonatomic, strong) NSMutableArray *currentStreams;
 
 // methods
 -(NSString *) description;
+
+// parse the contents of the icecast status message, and return
+// an Icecast Server object
++(IcecastServer *) parseIcecastStatus;
 
 @end
