@@ -25,8 +25,15 @@
 // methods
 -(NSString *) description;
 
-// parse the contents of the icecast status message, and return
-// an Icecast Server object
-+(IcecastServer *) parseIcecastStatus;
+// How to create this object?
+// 1) Use the parseIcecastStatus class method below?
+// 2) Create an 'initWithIcecastStatusMessage' method?
+// either method should also call/create the IcecastStream objects when it is called
+
+// class init method
+//+(IcecastServer *) parseIcecastStatus;
+
+// instance init method
+//-(IcecastServer *) initWithIcecastStatusMessage:(NSString *) statusMsg;
 
 @end
