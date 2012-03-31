@@ -59,7 +59,7 @@ enum ParserState { xmlParse, xmlSkip };
     [parser parse];
 }
 
-// parsing error occured; notified the GUI running in the main thread
+// parsing error occured; notify the GUI running in the main thread
 -(void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError
 {
     [self performSelectorOnMainThread:@selector(displayErrorMsg:) 
@@ -95,6 +95,8 @@ qualifiedName:(NSString *)qName
         case xmlParse:
             // if the parse flag is set...
             NSLog(@"string in the <pre> tags is:\n%@", string);
+            // send a message to the main thread at the end of parsing
+            // with the contents of the <pre> tags
             parserState = xmlSkip;
             //break;
             return;
@@ -107,6 +109,7 @@ qualifiedName:(NSString *)qName
 // notify when the document is finished parsing
 -(void)parserDidEndDocument:(NSXMLParser *)parser
 {
+    // FIXME pass back the text in the <pre> tags
     [self performSelectorOnMainThread:@selector(updateGUI:) 
                            withObject:nil 
                         waitUntilDone:NO];
