@@ -199,7 +199,7 @@
 		D34DE0B214D3541100F12818 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Example Company Inc.";
 			};
 			buildConfigurationList = D34DE0B514D3541100F12818 /* Build configuration list for PBXProject "KickTheTiresApp" */;
@@ -444,6 +444,7 @@
 				D34DE0F314D3541200F12818 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D34DE0F414D3541200F12818 /* Build configuration list for PBXNativeTarget "KickTheTiresAppTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +453,7 @@
 				D34DE0F614D3541200F12818 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
