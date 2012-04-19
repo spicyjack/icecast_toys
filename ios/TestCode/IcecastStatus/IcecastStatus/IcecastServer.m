@@ -17,6 +17,7 @@
 @synthesize totalConnections;
 @synthesize totalClientConnections;
 @synthesize totalSourceConnections;
+@synthesize currentStreams;
 
 // methods
 -(NSString *) description
