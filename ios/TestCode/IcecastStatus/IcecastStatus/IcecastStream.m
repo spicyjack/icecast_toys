@@ -18,4 +18,10 @@
 @synthesize currentlyPlayingSong;
 @synthesize streamURL;
 
+-(NSString *) description
+{
+    NSLog(@"description method");
+    return @"return value";
+}
+
 @end
