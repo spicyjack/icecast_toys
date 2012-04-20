@@ -15,8 +15,31 @@
 @synthesize window = _window;
 @synthesize viewController = _viewController;
 
+// the XML parser, started in it's own thread
+-(void)doXMLParsing:(id)sender
+{
+    NSString *urlString = @"http://stream.xaoc.org:7767/simple.xsl";
+    
+    // create a URL object
+    NSURL *url = [NSURL URLWithString:urlString];
+    // create a parser that reads from the URL object; this blocks, which 
+    // is why it's in it's own thread
+    NSXMLParser *parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
+    // set the delegate class to this (self) class
+    [parser setDelegate:self];
+    // blocking call
+    [parser parse];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // FIXME figure out a way to refactor the selector into a different class
+    [self performSelectorInBackground:@selector(doXMLParsing:)
+                           withObject:nil];
+    // FIXME create a parser class with the XML parser and the status parser in one object
+    // then instantiate the XML parser in the below invocation operation
+    NSInvocationOperation * genOp = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(generateKeyPairOperation) object:nil];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
