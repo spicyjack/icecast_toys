@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3B448211544E7FA00958377 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B448201544E7FA00958377 /* SystemConfiguration.framework */; };
 		D3C51E75153F8F94001F5B3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C51E74153F8F94001F5B3B /* UIKit.framework */; };
 		D3C51E77153F8F94001F5B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C51E76153F8F94001F5B3B /* Foundation.framework */; };
 		D3C51E79153F8F94001F5B3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C51E78153F8F94001F5B3B /* CoreGraphics.framework */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D3B448201544E7FA00958377 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D3C51E70153F8F94001F5B3B /* IcecastStatus-Apr2012.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IcecastStatus-Apr2012.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C51E74153F8F94001F5B3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D3C51E76153F8F94001F5B3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3B448211544E7FA00958377 /* SystemConfiguration.framework in Frameworks */,
 				D3C51E75153F8F94001F5B3B /* UIKit.framework in Frameworks */,
 				D3C51E77153F8F94001F5B3B /* Foundation.framework in Frameworks */,
 				D3C51E79153F8F94001F5B3B /* CoreGraphics.framework in Frameworks */,
@@ -112,6 +115,7 @@
 		D3C51E73153F8F94001F5B3B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3B448201544E7FA00958377 /* SystemConfiguration.framework */,
 				D3C51E74153F8F94001F5B3B /* UIKit.framework */,
 				D3C51E76153F8F94001F5B3B /* Foundation.framework */,
 				D3C51E78153F8F94001F5B3B /* CoreGraphics.framework */,
@@ -454,6 +458,7 @@
 				D3C51EA5153F8F94001F5B3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3C51EA6153F8F94001F5B3B /* Build configuration list for PBXNativeTarget "IcecastStatus-Apr2012Tests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +467,7 @@
 				D3C51EA8153F8F94001F5B3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
