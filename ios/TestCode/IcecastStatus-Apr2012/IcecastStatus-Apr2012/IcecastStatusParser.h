@@ -10,4 +10,7 @@
 
 @interface IcecastStatusParser : NSObject <NSXMLParserDelegate>
 
+// copied method from NSXMLParser
+- (id)initWithContentsOfURL:(NSURL *)url;
+
 @end
