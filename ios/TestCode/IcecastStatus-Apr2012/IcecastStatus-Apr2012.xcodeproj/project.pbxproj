@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D3B448211544E7FA00958377 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B448201544E7FA00958377 /* SystemConfiguration.framework */; };
+		D3B4482915463F3600958377 /* IcecastStatusParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B4482815463F3600958377 /* IcecastStatusParser.m */; };
+		D3B4482A15463F3600958377 /* IcecastStatusParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B4482815463F3600958377 /* IcecastStatusParser.m */; };
 		D3C51E75153F8F94001F5B3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C51E74153F8F94001F5B3B /* UIKit.framework */; };
 		D3C51E77153F8F94001F5B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C51E76153F8F94001F5B3B /* Foundation.framework */; };
 		D3C51E79153F8F94001F5B3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C51E78153F8F94001F5B3B /* CoreGraphics.framework */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		D3B448201544E7FA00958377 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D3B4482715463F3600958377 /* IcecastStatusParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IcecastStatusParser.h; sourceTree = "<group>"; };
+		D3B4482815463F3600958377 /* IcecastStatusParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IcecastStatusParser.m; sourceTree = "<group>"; };
 		D3C51E70153F8F94001F5B3B /* IcecastStatus-Apr2012.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IcecastStatus-Apr2012.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C51E74153F8F94001F5B3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D3C51E76153F8F94001F5B3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -138,6 +142,8 @@
 				D3C51E86153F8F94001F5B3B /* ViewController.h */,
 				D3C51E87153F8F94001F5B3B /* ViewController.m */,
 				D3C51E89153F8F94001F5B3B /* ViewController.xib */,
+				D3B4482715463F3600958377 /* IcecastStatusParser.h */,
+				D3B4482815463F3600958377 /* IcecastStatusParser.m */,
 				D3C51E7B153F8F94001F5B3B /* Supporting Files */,
 			);
 			path = "IcecastStatus-Apr2012";
@@ -286,6 +292,7 @@
 				D3C51EB8153F90B5001F5B3B /* IcecastServer.m in Sources */,
 				D3C51EBA153F90B5001F5B3B /* IcecastStream.m in Sources */,
 				D3C51EBC153F90B5001F5B3B /* NetworkingUtils.m in Sources */,
+				D3B4482915463F3600958377 /* IcecastStatusParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +304,7 @@
 				D3C51EB9153F90B5001F5B3B /* IcecastServer.m in Sources */,
 				D3C51EBB153F90B5001F5B3B /* IcecastStream.m in Sources */,
 				D3C51EBD153F90B5001F5B3B /* NetworkingUtils.m in Sources */,
+				D3B4482A15463F3600958377 /* IcecastStatusParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
