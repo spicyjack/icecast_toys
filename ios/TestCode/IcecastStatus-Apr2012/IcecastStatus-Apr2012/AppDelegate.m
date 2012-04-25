@@ -102,24 +102,24 @@
 }
 
 // the XML parser, started in it's own thread
--(void)doXMLParsing:(id)sender
-{
-    NSLog(@"entering doXMLParsing...");
-    [self performSelectorOnMainThread:@selector(enableNetworkBusyIcon:) 
-                           withObject:nil
-                        waitUntilDone:NO];
-    
-    NSString *urlString = @"http://stream.xaoc.org:7767/simple.xsl";
-    
-    // create a URL object
-    NSURL *url = [NSURL URLWithString:urlString];
-    // create a parser that reads from the URL object; this blocks, which 
-    // is why it's in it's own thread
-    NSXMLParser *parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
-    // set the delegate class to this (self) class
-    [parser setDelegate:self];
-    // blocking call
-    [parser parse];
-}
+//-(void)doXMLParsing:(id)sender
+//{
+//    NSLog(@"entering doXMLParsing...");
+//    [self performSelectorOnMainThread:@selector(enableNetworkBusyIcon:) 
+//                           withObject:nil
+//                        waitUntilDone:NO];
+//    
+//    NSString *urlString = @"http://stream.xaoc.org:7767/simple.xsl";
+//    
+//    // create a URL object
+//    NSURL *url = [NSURL URLWithString:urlString];
+//    // create a parser that reads from the URL object; this blocks, which 
+//    // is why it's in it's own thread
+//    NSXMLParser *parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
+//    // set the delegate class to this (self) class
+//    [parser setDelegate:self];
+//    // blocking call
+//    [parser parse];
+//}
 
 @end
