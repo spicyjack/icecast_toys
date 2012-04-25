@@ -92,7 +92,6 @@
 		D37DE6E714FD941800F70F3D = {
 			isa = PBXGroup;
 			children = (
-				D3E632601521675C00523C2C /* SystemConfiguration.framework */,
 				D37DE6FC14FD941800F70F3D /* IcecastStatus */,
 				D37DE71D14FD941800F70F3D /* IcecastStatusTests */,
 				D37DE6F514FD941800F70F3D /* Frameworks */,
@@ -112,6 +111,7 @@
 		D37DE6F514FD941800F70F3D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3E632601521675C00523C2C /* SystemConfiguration.framework */,
 				D37DE6F614FD941800F70F3D /* UIKit.framework */,
 				D37DE6F814FD941800F70F3D /* Foundation.framework */,
 				D37DE6FA14FD941800F70F3D /* CoreGraphics.framework */,
