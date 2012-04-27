@@ -31,6 +31,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // FIXME figure out a way to refactor the selector into a different class
+    /* FIXME move this into the status parser class, add a callback that the
+     status parser can use to let this class know what the status of parsing is
+     [parser parse withCaller:self];
+     */
     [self performSelectorInBackground:@selector(doXMLParsing:)
                            withObject:nil];
     // FIXME create a parser class with the XML parser and the status parser in one object
