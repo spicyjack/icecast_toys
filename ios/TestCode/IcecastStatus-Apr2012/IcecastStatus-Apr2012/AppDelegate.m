@@ -20,6 +20,7 @@
     UITextView *myTextView;
     IcecastServer *server;
     NSMutableArray *icecastStreams;
+    IcecastStatusParser *parser;
     // declare the parser pointer; the parser will be created in a separate thread
 //    IcecastStatusParser *parser;
 }
@@ -35,7 +36,8 @@
      status parser can use to let this class know what the status of parsing is
      [parser parse withCaller:self];
      */
-    [self performSelectorInBackground:@selector(doXMLParsing:)
+    parser = [[IcecastStatusParser alloc] init];
+    [parser performSelectorInBackground:@selector(doXMLParsing:)
                            withObject:nil];
     // FIXME create a parser class with the XML parser and the status parser in one object
     // then instantiate the XML parser in the below invocation operation
