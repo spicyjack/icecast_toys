@@ -10,4 +10,14 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextView *statusTextView;
+
+-(void) callXMLParser;
+-(void) callXMLParser:(NSURL *) url;
+-(void) enableNetworkBusyIcon:(id) sender;
+-(void) disableNetworkBusyIcon:(id) sender;
+-(void) displayErrorMsg:(NSString *) errorMsg;
+-(void) updateGUI:(NSString *) msg;
+
+
 @end

@@ -9,19 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 
-// local classes
-#import "IcecastServer.h"
-#import "IcecastStatusParser.h"
-
-
 @implementation AppDelegate
-{
-    // implementation variables
-    UITextView *myTextView;
-    IcecastServer *server;
-    NSMutableArray *icecastStreams;
-    IcecastStatusParser *parser;
-}
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
@@ -34,7 +22,7 @@
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
-    [self runXMLParser];
+
     return YES;
 }
 
@@ -63,51 +51,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
-// DISPATCH METHODS
-// these will be used by the parser thread
-
-// update the GUI; display the videos by calling the 'description' message
--(void) displayErrorMsg:(id) sender
-{
-    NSLog(@"displayErrorMsg: error from parser: %@", [sender description]);
-    myTextView.text = [sender description];
-}
-
-// update the GUI; display the videos by calling the 'description' message
--(void) updateGUI:(id) sender
-{
-//    myTextView.text = [icecastStreams description];
-    NSLog(@"updateGUI; string from parser: %@", [sender description]);
-//    myTextView.text = @"Icecast streams";
-}
-
-// update the GUI; display the videos by calling the 'description' message
--(void) enableNetworkBusyIcon:(id) sender
-{
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
-}
-
-// update the GUI; display the videos by calling the 'description' message
--(void) disableNetworkBusyIcon:(id) sender
-{
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-}
-
-// the XML parser, started in it's own thread
--(void)runXMLParser
-{
-
-    // FIXME figure out a way to refactor the selector into a different class
-    /* FIXME move this into the status parser class, add a callback that the
-     status parser can use to let this class know what the status of parsing is
-     [parser parse withCaller:self];
-     */
-    NSLog(@"Creating IcecastStatusParser...");
-    parser = [[IcecastStatusParser alloc] init];
-    NSLog(@"Calling parser");
-    [parser doParsing:self];
 }
 
 @end

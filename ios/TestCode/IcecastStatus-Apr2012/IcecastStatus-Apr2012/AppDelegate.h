@@ -16,10 +16,4 @@
 
 @property (strong, nonatomic) ViewController *viewController;
 
--(void)runXMLParser;
--(void) enableNetworkBusyIcon:(id) sender;
--(void) disableNetworkBusyIcon:(id) sender;
--(void) displayErrorMsg:(NSString *) errorMsg;
--(void) updateGUI:(NSString *) msg;
-
 @end

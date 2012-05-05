@@ -7,7 +7,7 @@
 //
 
 #import "IcecastStatusParser.h"
-#import "AppDelegate.h"
+#import "ViewController.h"
 
 // enumerated type
 enum ParserState { xmlParse, xmlSkip };
@@ -28,20 +28,10 @@ enum ParserState { xmlParse, xmlSkip };
  methods meant to be used directly by the AppDelegate 
 */
 
-// call the doParsing method with a default URL
--(void)doParsing:(id)sender
-{
-    NSLog(@"doParsing, calling doParsing with default URL");
-    // create a URL object
-    NSString *urlString = @"http://stream.xaoc.org:7767/simple.xsl";
-    NSURL *url = [NSURL URLWithString:urlString];
-    [self doParsing:sender withURL:url];
-}
-
 // launch the parser in it's own thread
--(void)doParsing:(id)sender withURL:(NSURL *)url
+- (void) parseIcecastServerStatus:(id)sender withURL:(NSURL *) url
 {
-    NSLog(@"doParsing, saving appDelegate object...");
+    NSLog(@"parseIcecastServerStatus, saving appDelegate object...");
     appDelegate = sender;
     [self performSelectorInBackground:@selector(doXMLParsing:)
                            withObject:url];
