@@ -21,8 +21,6 @@
     IcecastServer *server;
     NSMutableArray *icecastStreams;
     IcecastStatusParser *parser;
-    // declare the parser pointer; the parser will be created in a separate thread
-//    IcecastStatusParser *parser;
 }
 
 @synthesize window = _window;
@@ -31,23 +29,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // FIXME figure out a way to refactor the selector into a different class
-    /* FIXME move this into the status parser class, add a callback that the
-     status parser can use to let this class know what the status of parsing is
-     [parser parse withCaller:self];
-     */
-    parser = [[IcecastStatusParser alloc] init];
-    [parser performSelectorInBackground:@selector(doXMLParsing:)
-                           withObject:nil];
-    // FIXME create a parser class with the XML parser and the status parser in one object
-    // then instantiate the XML parser in the below invocation operation
-    //NSInvocationOperation * genOp = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(generateKeyPairOperation) object:nil];
-
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    [self runXMLParser];
     return YES;
 }
 
@@ -84,6 +71,7 @@
 // update the GUI; display the videos by calling the 'description' message
 -(void) displayErrorMsg:(id) sender
 {
+    NSLog(@"displayErrorMsg: error from parser: %@", [sender description]);
     myTextView.text = [sender description];
 }
 
@@ -91,7 +79,7 @@
 -(void) updateGUI:(id) sender
 {
 //    myTextView.text = [icecastStreams description];
-    NSLog(@"Got string from parser: %@", sender);
+    NSLog(@"updateGUI; string from parser: %@", [sender description]);
 //    myTextView.text = @"Icecast streams";
 }
 
@@ -108,24 +96,18 @@
 }
 
 // the XML parser, started in it's own thread
-//-(void)doXMLParsing:(id)sender
-//{
-//    NSLog(@"entering doXMLParsing...");
-//    [self performSelectorOnMainThread:@selector(enableNetworkBusyIcon:) 
-//                           withObject:nil
-//                        waitUntilDone:NO];
-//    
-//    NSString *urlString = @"http://stream.xaoc.org:7767/simple.xsl";
-//    
-//    // create a URL object
-//    NSURL *url = [NSURL URLWithString:urlString];
-//    // create a parser that reads from the URL object; this blocks, which 
-//    // is why it's in it's own thread
-//    NSXMLParser *parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
-//    // set the delegate class to this (self) class
-//    [parser setDelegate:self];
-//    // blocking call
-//    [parser parse];
-//}
+-(void)runXMLParser
+{
+
+    // FIXME figure out a way to refactor the selector into a different class
+    /* FIXME move this into the status parser class, add a callback that the
+     status parser can use to let this class know what the status of parsing is
+     [parser parse withCaller:self];
+     */
+    NSLog(@"Creating IcecastStatusParser...");
+    parser = [[IcecastStatusParser alloc] init];
+    NSLog(@"Calling parser");
+    [parser doParsing:self];
+}
 
 @end
