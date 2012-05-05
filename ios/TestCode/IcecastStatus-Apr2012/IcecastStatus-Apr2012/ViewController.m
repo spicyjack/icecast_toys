@@ -67,9 +67,8 @@ NSString *defaultURLString = @"http://stream.xaoc.org:7767/simple.xsl";
 // update the GUI; display the videos by calling the 'description' message
 -(void) updateGUI:(id) sender
 {
-    //    myTextView.text = [icecastStreams description];
-    NSLog(@"updateGUI; string from parser: %@", [sender description]);
-    //    myTextView.text = @"Icecast streams";
+    //NSLog(@"updateGUI; string from parser: %@", [sender description]);
+    statusTextView.text = [sender description];
 }
 
 // update the GUI; display the videos by calling the 'description' message

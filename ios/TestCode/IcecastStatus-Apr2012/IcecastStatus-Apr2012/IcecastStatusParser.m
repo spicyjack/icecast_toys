@@ -33,6 +33,7 @@ enum ParserState { xmlParse, xmlSkip };
 {
     NSLog(@"parseIcecastServerStatus, saving appDelegate object...");
     appDelegate = sender;
+    [self triggerEnableNetworkBusyIcon:self];
     [self performSelectorInBackground:@selector(doXMLParsing:)
                            withObject:url];
     // FIXME create a parser class with the XML parser and the status parser in one object
@@ -79,7 +80,7 @@ enum ParserState { xmlParse, xmlSkip };
 
 -(void)triggerUpdateGUI:(NSString *) msg
 {
-    NSLog(@"triggerUpdateGUI: %@", msg);
+    //NSLog(@"triggerUpdateGUI: %@", msg);
     [appDelegate updateGUI:msg];
 }
 
