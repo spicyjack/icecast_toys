@@ -10,6 +10,7 @@
 
 @interface IcecastStatusParser : NSObject <NSXMLParserDelegate>
 
-- (void) parseIcecastServerStatus:(id)sender withURL:(NSURL *) url;
+- (void) fetchAndParseIcecastStatusPage:(id)sender withURL:(NSURL *) url;
+
 
 @end

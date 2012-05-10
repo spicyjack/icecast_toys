@@ -7,6 +7,7 @@
 //
 
 #import "IcecastStatus_Apr2012Tests.h"
+#import "IcecastStatusParser.h"
 
 @implementation IcecastStatus_Apr2012Tests
 

@@ -29,7 +29,7 @@ enum ParserState { xmlParse, xmlSkip };
 */
 
 // launch the parser in it's own thread
-- (void) parseIcecastServerStatus:(id)sender withURL:(NSURL *) url
+- (void) fetchAndParseIcecastStatusPage:(id)sender withURL:(NSURL *) url
 {
     NSLog(@"parseIcecastServerStatus, saving appDelegate object...");
     appDelegate = sender;

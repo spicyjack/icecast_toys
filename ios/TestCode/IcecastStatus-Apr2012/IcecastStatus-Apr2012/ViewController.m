@@ -97,7 +97,7 @@ NSString *defaultURLString = @"http://stream.xaoc.org:7767/simple.xsl";
     NSLog(@"Creating IcecastStatusParser...");
     parser = [[IcecastStatusParser alloc] init];
     NSLog(@"Calling parser");
-    [parser parseIcecastServerStatus:self withURL:url];
+    [parser fetchAndParseIcecastStatusPage:self withURL:url];
 }
 
 
