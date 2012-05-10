@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3941831155B4351007D68BB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B448201544E7FA00958377 /* SystemConfiguration.framework */; };
 		D3B448211544E7FA00958377 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B448201544E7FA00958377 /* SystemConfiguration.framework */; };
 		D3B4482915463F3600958377 /* IcecastStatusParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B4482815463F3600958377 /* IcecastStatusParser.m */; };
 		D3B4482A15463F3600958377 /* IcecastStatusParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B4482815463F3600958377 /* IcecastStatusParser.m */; };
@@ -88,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3941831155B4351007D68BB /* SystemConfiguration.framework in Frameworks */,
 				D3C51E93153F8F94001F5B3B /* SenTestingKit.framework in Frameworks */,
 				D3C51E94153F8F94001F5B3B /* UIKit.framework in Frameworks */,
 				D3C51E95153F8F94001F5B3B /* Foundation.framework in Frameworks */,
