@@ -28,7 +28,7 @@ enum ParserState { xmlParse, xmlSkip };
  methods meant to be used directly by the AppDelegate 
 */
 
-// launch the parser in it's own thread
+// launch the status page downloader/HTML parser in it's own thread
 - (void) fetchAndParseIcecastStatusPage:(id)sender withURL:(NSURL *) url
 {
     NSLog(@"parseIcecastServerStatus, saving appDelegate object...");
@@ -41,6 +41,7 @@ enum ParserState { xmlParse, xmlSkip };
     //NSInvocationOperation * genOp = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(generateKeyPairOperation) object:nil];
 }
 
+// the threaded status page downloader/HTML parser
 -(void) doXMLParsing:(NSURL *)url
 {
     // create a parser that reads from the URL object; this can block, which 
@@ -51,6 +52,21 @@ enum ParserState { xmlParse, xmlSkip };
     [xmlParser setDelegate:self];
     // blocking call
     [xmlParser parse];
+}
+
+/*
+
+ Icecast status page is formatted as follows:
+ - First line format: Field name: field value
+ - Subseqent lines are formatted as: value|value|value|etc.; (semicolon ends that mount)
+ 
+*/
+
+- (NSMutableArray *) doIcecastStatusParse:(NSString *)icecastStatus
+{
+    NSMutableArray *mountPoints = [[NSMutableArray alloc] init];
+    
+    return mountPoints;
 }
 
 /*

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D3941831155B4351007D68BB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B448201544E7FA00958377 /* SystemConfiguration.framework */; };
+		D3941847155B49D6007D68BB /* sample_icecast_status_output.txt in Resources */ = {isa = PBXBuildFile; fileRef = D3941846155B49D6007D68BB /* sample_icecast_status_output.txt */; };
 		D3B448211544E7FA00958377 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B448201544E7FA00958377 /* SystemConfiguration.framework */; };
 		D3B4482915463F3600958377 /* IcecastStatusParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B4482815463F3600958377 /* IcecastStatusParser.m */; };
 		D3B4482A15463F3600958377 /* IcecastStatusParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B4482815463F3600958377 /* IcecastStatusParser.m */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D3941846155B49D6007D68BB /* sample_icecast_status_output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample_icecast_status_output.txt; sourceTree = "<group>"; };
 		D3B448201544E7FA00958377 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D3B4482715463F3600958377 /* IcecastStatusParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IcecastStatusParser.h; sourceTree = "<group>"; };
 		D3B4482815463F3600958377 /* IcecastStatusParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IcecastStatusParser.m; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				D3C51E9E153F8F94001F5B3B /* IcecastStatus_Apr2012Tests.h */,
 				D3C51E9F153F8F94001F5B3B /* IcecastStatus_Apr2012Tests.m */,
 				D3C51E99153F8F94001F5B3B /* Supporting Files */,
+				D3941846155B49D6007D68BB /* sample_icecast_status_output.txt */,
 			);
 			path = "IcecastStatus-Apr2012Tests";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C51E9D153F8F94001F5B3B /* InfoPlist.strings in Resources */,
+				D3941847155B49D6007D68BB /* sample_icecast_status_output.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
